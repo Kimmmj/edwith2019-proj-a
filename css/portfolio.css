@@ -1,0 +1,376 @@
+@charset "UTF-8";
+html, body, span, ul, li, ol, dl, dd {
+  margin: 0;
+  font-family: '나눔 고딕', 'NanumGothic', '돋움', 'Dotum', sans-serif;
+}
+ul ,dl, ol {
+  padding: 0;
+  font-size: 12px;
+  color: #000;
+  list-style: none;
+}
+p, h5, caption, label, dt {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+}
+header {
+  background:#000;
+  height: 120px
+}
+.linkbtn {
+  display: block;
+  font-size: 16px;
+  color: #000;
+  padding: 8px;
+  text-decoration: none;
+}
+h1 {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 40px;
+  max-width: 1080px;
+  color: #fff;
+  font-size: 40px;
+}
+h2 {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  border-bottom: 1px solid #454545;
+}
+h3 {
+  margin: 0;
+  padding: 13px 0 13px 15px;
+  font-size: 16px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #d1d1d1;
+}
+h4 {
+  margin-top: 30px;
+  font-size: 32px;
+  text-align: center;
+}
+.footer {
+  margin: auto;
+  border-top: 1px solid #d1d1d1;
+  text-align: center;
+}
+address, .email {
+  padding: 30px 0;
+  line-height:1.8;
+  font-style: normal;
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+}
+.copyright {
+  color: #000;
+}
+.box {
+  margin-top: 30px;
+  border: 1px solid #d1d1d1;
+}
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 1000px;
+}
+
+/* 메뉴 */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+  text-align: center;
+}
+.menu_box {
+  float: left;
+  flex: auto;
+  border: 1px solid #d1d1d1;
+  margin-right: 14px;
+  height: 33px;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+.menu_box:hover {
+  border-color: #454545;
+  font-weight: bold;
+}
+
+.content {
+  padding: 30px;
+  font-size: 12px;
+}
+
+/* 테이블 요소 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+}
+.t01 colgroup col {
+  width: 91px;
+}
+.t01 colgroup col:first-child, .t01 colgroup col:last-child {
+  width: 150px;
+}
+.t01 th, .t01 td {
+  border: 1px solid #e4e4e4;
+  padding: 10px 0;
+}
+.t01 thead {
+  background-color: #fbfbfb;
+}
+.refund-display:first-child {
+  width: 350px;
+}
+.refund-display {
+  width: 250px;
+}
+.t02 thead, .t02 tfoot {
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #fbfbfb;
+}
+.t02 thead {
+  border-top: 2px solid #a5a5a5;
+}
+.t02 th, .t02 td {
+  text-align: right;
+  padding: 10px 60px;
+}
+.t02 tr th:first-child, .t02 tr td:first-child {
+  text-align: center;
+}
+.t02 thead th, .t02 tbody th {
+  font-weight: normal;
+}
+.t02 tfoot {
+  font-weight: bold;
+}
+.content .table-inner {
+  margin-bottom: 48px;
+}
+
+/* 폼 요소 */
+label {
+  display: inline-block;
+  width: 100%;
+}
+input[type=text],input[type=email],input[type=number],input[type=password], select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #000;
+  border: 1px solid #e4e4e4;
+}
+button[type=button] {
+  width: 100%;
+  line-height: 15px;
+  background-color: #4ec53d;
+  color: #fff;
+  border: 1px solid #08a600;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+input[type=checkbox] {
+  width: auto;
+  margin-right: 10px;
+  padding: 0;
+}
+.checkbox {
+  display: inline-block;
+  width: 12%;
+  margin: 0 0 20px 0;
+  font-weight: normal;
+  font-size: 12px;
+}
+.phonenumber {
+  display: inline-block;
+  width: 80%;
+  padding: 0 5px 5px 0;
+}
+.phonenumber input {
+  margin: 0;
+  box-sizing: border-box;
+}
+.form_inner .certificate {
+  width: 19%;
+  margin-bottom: 5px;
+}
+.submit .button {
+  font-size: 16px;
+  padding: 11px;
+}
+textarea {
+  display: block;
+  height: 150px;
+  resize: none;
+}
+.form_inner {
+  padding: 20px;
+  border: 1px solid #e4e4e4;
+  background-color: #fbfbfb;
+}
+.dropdown {
+  width: 32.25%;
+  margin-left: 1%;
+  height: 35px;
+  background-color: #fff;
+}
+.birth select:first-child {
+  margin: 0;
+}
+
+/* 리스트 요소 */
+.searchresult dl {
+  margin: 30px 0;
+}
+.searchresult dt {
+  display: inline-block;
+  margin-right: 4px;
+}
+.search-sort-dictionary,.cookie-em-blue {
+  display: inline;
+  font-size: 12px;
+  color: #559bfa;
+}
+.search-sort-dictionary {
+  font-weight: normal;
+}
+.fontred {
+  color: #ec5336;
+}
+.cookie ul {
+  list-style: disc;
+  padding-left: 21px;
+}
+.cookie ul li {
+  margin-bottom: 10px;
+}
+.cookie li:last-child {
+  margin: 0;
+}
+.cookie-link {
+  list-style-type: none;
+  color: #559bfa;
+  text-decoration: underline;
+}
+ol {
+  counter-reset: section;
+  display: block;
+  margin: auto;
+  list-style: none;
+  box-sizing: border-box;
+}
+ol li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+ol li::before{
+  counter-increment: section;
+  content: counters(section,".") " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 5px 10px 5px 0;
+  padding-top: 2px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #e0e0e0;
+  font-size: 10px;
+  color: #666;
+  box-sizing: border-box;
+}
+.searchresult, .searchword, .cookie, .news, .webtoon {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.webtoon {
+  margin: 0;
+  padding: 20px 21px 20px 20px;
+}
+.searchword {
+  width: 20%;
+}
+.news li {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.news_thum {
+  float: left;
+}
+.news a::after {
+  content: "";
+  clear: left;
+}
+.news_thum img {
+  margin-right: 10px;
+}
+.news_title {
+  font-size: 14px;
+  color: #00c;
+  font-weight: bold;
+}
+.news li p {
+  margin: 8px 0 0 0;
+  font-weight: normal;
+  font-size: 12px;
+}
+.news-article {
+  overflow: hidden;
+}
+.news li:last-of-type {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.webtoon li {
+  display: inline-block;
+  width: 285px;
+  margin: 0 20px 20px 0;
+}
+.webtoon li:nth-child(3n) {
+  margin-right: 0px;
+}
+.webtoon a {
+  text-decoration: none;
+  display: inline-block;
+}
+.webtoon a:hover {
+  text-decoration: underline;
+}
+.webtoon span {
+  font-weight: normal;
+  border: 1px solid #71b036;
+  background-color: #80c83d;
+  font-size: 10px;
+  color: #fff;
+  vertical-align: middle;
+  padding: 0 3px;
+  margin-right: 5px;
+  line-height: 17px;
+}
+.webtoon span.red {
+  border: 1px solid #df4e28;
+  background-color: #ec5336;
+}
+.webtoon dt {
+  display: inline;
+  vertical-align: middle;
+}
+.webtoon dd {
+  margin-top: 3px;
+}
